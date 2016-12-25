@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBW-Wj-dTd">
+                                <rect key="frame" x="11" y="71" width="142" height="30"/>
+                                <state key="normal" title="connection_sendAsy"/>
+                                <connections>
+                                    <action selector="URLconnection_sendAsy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFJ-9J-TA3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZz-2I-SF9">
+                                <rect key="frame" x="21" y="199" width="100" height="30"/>
+                                <state key="normal" title="initConnection"/>
+                                <connections>
+                                    <action selector="URLconnection_initConnection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCx-zU-7iJ"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIE-ho-Spy">
+                                <rect key="frame" x="16" y="308" width="288" height="260"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="RLn-2C-2GU"/>
+                                </constraints>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUD-iK-14m">
+                                <rect key="frame" x="154" y="71" width="156" height="30"/>
+                                <state key="normal" title="session"/>
+                                <connections>
+                                    <action selector="URLsession:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oDr-vy-oKD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMf-ma-YnM">
+                                <rect key="frame" x="154" y="135" width="156" height="30"/>
+                                <state key="normal" title="sessionWithHandler"/>
+                                <connections>
+                                    <action selector="URLSessionWithHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jFl-jn-6Gw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvD-Lq-h4B">
+                                <rect key="frame" x="154" y="199" width="156" height="30"/>
+                                <state key="normal" title="downloadSession"/>
+                                <connections>
+                                    <action selector="URLSessionDownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOh-nl-tfJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Z8-fN-jkx">
+                                <rect key="frame" x="23" y="248" width="97" height="30"/>
+                                <state key="normal" title="AFNetworking"/>
+                                <connections>
+                                    <action selector="AFNetworking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQK-fl-Q7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2h-7M-Hyq">
+                                <rect key="frame" x="204" y="248" width="56" height="30"/>
+                                <state key="normal" title="showVC"/>
+                                <connections>
+                                    <action selector="showVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDx-W9-ar1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgL-Iu-8xe">
+                                <rect key="frame" x="11" y="135" width="142" height="30"/>
+                                <state key="normal" title="connection_sendSyn"/>
+                                <connections>
+                                    <action selector="URLconnection_sendSyn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AlX-rb-mKG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="zIE-ho-Spy" secondAttribute="trailing" id="AdZ-bv-Swc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zIE-ho-Spy" secondAttribute="bottom" id="TRL-Sg-DJm"/>
+                            <constraint firstItem="zIE-ho-Spy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iAH-r7-7Ci"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="zIE-ho-Spy" id="nxK-ym-L1Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.46666666666664" y="319.02666666666664"/>
+        </scene>
+    </scenes>
+</document>
